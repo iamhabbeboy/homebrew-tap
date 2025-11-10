@@ -11,7 +11,7 @@ class Gitresume < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/iamhabbeboy/gitresume-cli/releases/download/v0.1.0/gitresume-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "55cba08379a8b6da5e25753584f983c1607a0d958b57e4b9e75ceee266e2675a"
+      sha256 "516f1e006e0dbb00de7a416b28d536171518ce4438092e501b4f44125da8c9be"
 
       def install
         bin.install "gitresume"
@@ -19,7 +19,7 @@ class Gitresume < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/iamhabbeboy/gitresume-cli/releases/download/v0.1.0/gitresume-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e5cfaa0c042e6b5809668fa83da5c22e1197adf2c2d815bdc04716239c8abca8"
+      sha256 "f50098829036f6c3c94dc327f1ea9f75724542f6d90168a208ed344dbe800e76"
 
       def install
         bin.install "gitresume"
@@ -30,7 +30,7 @@ class Gitresume < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/iamhabbeboy/gitresume-cli/releases/download/v0.1.0/gitresume-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "cd08de144428f7f225d0fed67f7c69850a086fe8256f61c0678756735a71dfa6"
+      sha256 "ed0b934e574231554ac51132a025a6b525c86a58b33fcda91a20a1228ba7d6c4"
       def install
         bin.install "gitresume"
       end
